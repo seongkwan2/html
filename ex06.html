@@ -6,33 +6,92 @@
 </head>
 <body>
 
-<table border="1">
-<tr>
-<th colspan = "5">IT시간표</th>
-</tr>
+	- Description list는 설명 목록을 정의할 때 사용<br>
+	- 태그 순서 dl - dt - dd순으로 나열한다.<br>
+	<dl>
+	    <dt> <b>HTML</b> </dt>	
+	    <DD>
+	    	HTML를 전달하는 프로토콜<BR>
+	    	URL은 "http://도메인 주소"로 사용된다.
+	    </DD>
+	</dl>
 
-<tr>
-<th></th><th>401호</th> <th>402호</th> <th>403호</th> <th>404호</th>
-</tr>
+<hr>
+	<h3>list</h3>
+	- order : 순서가 있는 리스트<br>
+	- unorder : 순서가 없는 리스트<br>
+	
+	<ol type="a">
+		<li>스포츠</li><li>영화</li>
+	</ol>
+	
+	<ul type="circle">
+		<li>스포츠</li><li>영화</li>
+	</ul>
+	
+	
+	
+	
+	<ul>
+		<li>
+			<b>교육과정</b>
+			<ul>
+				<li><a href="#">HTML</a> </li>
+				<li><a href="#">CSS</a>	</li>
+				<li><a href="#">JavaScript</a> </li>
+			</ul>
+		</li>
+	
+		<li>
+			<b>회사소개</b>
+			<ul>
+				<li><a href="#">인사말</a> </li>
+				<li><a href="#">CEO</a>	</li>
+			</ul>
+		</li>
+	</ul>
 
-<tr>
-<th>09:00-12:00</th><th rowspan="4">공<br><br>사<br><br>중</th> 
-<td>PYTHON기초</td> <td rowspan="2">네트워크보안<br>실무자양성</td> <td>보충훈련 과정<br>(OS/네트워크)</td>
-</tr>
+<hr>
+	<h3>img</h3>
+	- 이미지를 넣는경우<br>
+	- src : 이미지 경로를 넣어준다<br>
+	- alt : 이미지를 불러오지 못하는 경우 내용으로 작성<br>
+	- <strong>alt속성은 필수</strong>로 넣어야한다<br>
+<img src="img.jpg" width="100px" height="100px"
+					alt="이미지 입니다~!"><br>
+					<!-- alt = 이미지를 불러오지 못하면 글자로 대체하는 속성 -->
+					
+<a href="https://www.naver.com" title = "naver 이동">
+<img src="img.jpg" width="100px" height="100px"
+					alt="이미지 입니다~!"><br>	<!-- a태그로 감싸면 이미지 클릭시 네이버로 가짐 -->
+</a>
+	
+	
+	<h3>a태그</h3>
+	속성<br>
+	- href : 이동하고자 하는 경로를 넣어준다<br>
+	- target : _blank를 사용하여 새탭으로 페이지를 연다.<br>
+	<a href="ex05.html">ex05</a>
+	<a href="https://naver.com">naver</a><br>
+	<a href="https://naver.com" title="무엇일까요?">이동</a><br>	<!-- 말풍선이 생김 -->
+	<a href="exam.html" target="_blank">이동</a><br>
+	<a href="mailto:zaq3195@naver.com">이메일</a>
+	
+	
+<hr>
+&copy;
+<hr>
+&#60;태그&gt;a &nbsp;&nbsp; a&lt;/태그&gt;
 
-<tr>
-<th>12:30-15:30</th><td>JAVA</td> <td>보충훈련 과정<br>(언어계열)</td>
-</tr>
-<tr>
 
-<th>15:30-18:30</th><td>C언어</td> <td rowspan="2">가상화 시스템<br>엔제니어 실무자 양성</td> <td>리눅스</td>
-</tr>
-<tr>
-
-<th>19:00-22:00</th><td>PYTHON_WEB</td> <td>서버</td>
-</tr>
-
-</table>
+<hr size = "10">
+<hr width = "50%" align="center" color = "red">		<!-- %는 유동적 -->
+<hr width = "50px" align="center" color = "blue">	<!-- px는 고정적 -->
+<hr>
+	<pre>
+	공	백을 넣어	보
+세		요
+	</pre>
 
 </body>
 </html>
